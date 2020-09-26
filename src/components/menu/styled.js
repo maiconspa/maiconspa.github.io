@@ -5,6 +5,11 @@ const slide = keyframes`
     to  {top: 10px;}
 `
 
+const expand = keyframes`
+    from {opacity: 0; margin-top: -30px;}
+    to {opacity: 1; margin-top: 10;}
+`
+
 export const Container = styled.nav`
     width: calc(100% - 20px);
     display: flex;
@@ -83,6 +88,7 @@ export const ButtonList = styled.div`
         display: none;
 
         ${({show}) => show && css`
+            animation: ${expand} .5s ease-out;
             display: ${({show}) => show ? 'flex' : 'none'};
             padding: 10 0 0;
         `}

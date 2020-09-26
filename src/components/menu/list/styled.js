@@ -1,4 +1,9 @@
-import styled from 'styled-components'
+import styled, {css, keyframes} from 'styled-components'
+
+const expand = keyframes`
+    from {opacity: 0; margin-top: -30px;}
+    to {opacity: 1; margin-top: 10;}
+`
 
 export const Container = styled.ul`
     grid-area: list;
@@ -18,7 +23,9 @@ export const Container = styled.ul`
         display: ${({show}) => show ? 'block' : 'none'};
         justify-self: right;
         background: transparent;
-
+        ${({show}) => show && css`
+            animation: ${expand} .5s ease-out;
+        `}
         a {
             display: block;
             margin: 10px 0 0;
@@ -30,3 +37,5 @@ export const Container = styled.ul`
 export const Item = styled.li`
     
 `
+
+
