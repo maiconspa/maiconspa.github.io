@@ -35,7 +35,7 @@ const Scrollbar = props => {
             return <div></div>
         }
     }
-console.log('cont: ', props)
+    
     return <CustomScrollbar
         style={{width: container.width, height: container.height}}
         renderView={viewStyle}
@@ -60,10 +60,10 @@ Scrollbar.defaultProps = {
     borderRadius: 'inherit',
     horizontal: true,
     vertical: true,
-    autoHide: false,
+    autoHide: true,
     container: {
-        width: 'auto',
-        height: 'auto'
+        width: '100%',
+        height: '100%'
     }
 }
 
