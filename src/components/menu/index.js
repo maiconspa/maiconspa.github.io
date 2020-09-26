@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
+import { ReactComponent as Logo } from '../../assets/icons/logo.svg'
 import { ReactComponent as MenuIcon } from '../../assets/icons/menu.svg'
 import { ReactComponent as SettingsIcon } from '../../assets/icons/settings.svg'
 import { ReactComponent as Palette } from '../../assets/icons/palette.svg'
@@ -18,7 +19,10 @@ const Menu = () => {
 
     return <>
         <Container show={show}>
-            <Link key='home' to='/'>MAICONSPA.</Link>
+            <Link key='home' to='/'>
+                <Logo />
+            </Link>
+
             <List show={show} handleShow={bool => setShow(bool)}/>
             
             <ButtonList show={show}>

@@ -41,15 +41,27 @@ export const Container = styled.nav`
     
     `}
 
+    >a {
+        height: 30px;
+    }
+
     a {
         grid-area: logo;
         text-decoration: none;
         color: ${({theme}) => theme.navbar.text};
         font-weight: bold;
         transition: all .3s;
+        border-radius: 50%;
 
         :hover {
             transform: scale(0.9);
+        }
+
+        >svg {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            fill: ${({theme}) => theme.navbar.text};;
         }
     }
 
