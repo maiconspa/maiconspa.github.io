@@ -1,5 +1,4 @@
 <h1 align="center">maiconspa.github.io</h1>
-<h3>Olá, este é o repositório do meu portfólio</h3>
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/maiconspa/maiconspa.github.io?color=9cf">
