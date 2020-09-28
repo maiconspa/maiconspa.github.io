@@ -1,0 +1,39 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean, text } from '@storybook/addon-knobs';
+import { withA11y } from '@storybook/addon-a11y';
+import { Button } from './index';
+import { action } from '@storybook/addon-actions';
+
+<Meta title="2.Components|Button" component={Button} />
+
+# Title
+<ul>
+ <li>1</li>
+ <li>2</li>
+</ul>
+<br/>
+
+## Subtitle
+
+### Famous preview
+
+<Preview>
+    <Story name="sizes" parameters={{ decorators: [withA11y] }}>
+        <Button text={'Texto novo'}/>
+    </Story>
+    <Story name="sizes" parameters={{ decorators: [withA11y] }}>
+        <Button text={'Texto novo'}/>
+    </Story>
+</Preview>
+
+### Playground
+
+Experiment with this story with Knobs addon in Canvas mode.
+<Preview>
+    <Story name="knobs" parameters={{ decorators: [withKnobs, withA11y] }}>
+      <Button
+        text={text('Texto: ')}
+        variant={select('Size: ', ['tiny', 'small', 'medium', 'large'])}
+      />
+    </Story>
+</Preview>

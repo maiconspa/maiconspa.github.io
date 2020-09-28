@@ -61,7 +61,7 @@ export const Container = styled.nav`
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            fill: ${({theme}) => theme.navbar.text};;
+            fill: ${({theme}) => theme.navbar.text};
         }
     }
 
@@ -82,7 +82,7 @@ export const Container = styled.nav`
 
         >svg {
             width: 30px;
-            color: ${({theme}) => theme.navbar.text};
+            fill: ${({theme}) => theme.navbar.text};
         }
 
         @media (max-width: 1010px) {
@@ -121,10 +121,11 @@ export const ButtonList = styled.div`
         >svg {
             width: 30px;
             color: ${({theme}) => theme.navbar.text};
+            fill: ${({theme}) => theme.navbar.text};
         }
 
-        ${({show}) => show && css`
+        :last-child {
             margin: 0 0 0 20px;
-        `}
+        }
     }
 `

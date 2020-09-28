@@ -1,21 +1,24 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
 
 import Routes from '../routes'
-import {ThemeProvider} from 'styled-components'
-import {Theme} from '../assets/theme'
+import { ThemeProvider } from 'styled-components'
+import { Theme } from '../assets/theme'
+import { changeTheme } from '../actions'
 
 import GlobalStyles from './styled'
 
-const App = () => {
-	const [theme, setTheme] = useState(localStorage.getItem('theme'))
+const App = props => {
+	const { theme, setTheme } = props
+	const localTheme = localStorage.getItem('theme')
 
-	useEffect(() => {
+	if (theme !== '')
 		localStorage.setItem('theme', theme)
-	}, [theme])
+
+	if (theme === '')
+		setTheme(localTheme || 'light')
 
 	const handleTheme = () => {
-		if (theme === null || theme === undefined || theme === '')
-			setTheme('light')
 		
 		return Object.keys(Theme).filter(key => key === theme)[0]
         ? Theme[Object.keys(Theme).filter(key => key === theme)[0]]
@@ -28,4 +31,12 @@ const App = () => {
 	</ThemeProvider>
 }
 
-export default App
+const mapStateToProps = store => ({
+	theme: store.themeState.value
+})
+
+const mapDispatchToProps = dispatch => ({
+    setTheme: theme => dispatch(changeTheme(theme))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

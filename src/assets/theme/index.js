@@ -1,6 +1,9 @@
 export const Theme = {
     light: {
-        background: '#ccc',
+        primary: '#2196f3',
+        secondary: '#ff9100',
+        background: '#fff',
+        text: '#333',
         scroll: '#333',
 
         navbar: {
@@ -10,14 +13,58 @@ export const Theme = {
 
         dialog: {
             background: '#ffffff',
-            blurredBackground: '#ffffff40',
+            blurredBackground: '#7d7d7d40',
             title: '#000',
-            text: '#000'
+            text: '#333'
+        },
+
+        button: {
+            primary: {
+                background: '#7D3CE8',
+                boxShadow: 'none',
+                border: '1px solid #7D3CE8',
+                borderRadius: '3px',
+                text: '#FFFFFF',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#6C2BD7',
+                    text: '#FFFFFF',
+                },
+
+                disabled: {
+
+                }
+            },
+            secondary: {
+                background: '#FFFFFF',
+                boxShadow: 'none',
+                border: '1px solid #E0E0E0',
+                borderRadius: '3px',
+                text: '#989898',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#DDDDDD',
+                    text: '#989898',
+                },
+
+                disabled: {
+
+                }
+            }
         }
     },
     dark: {
-        background: '#333',
-        scroll: '#fff',
+        primary: '#2196f3',
+        secondary: '#ff9100',
+        background: '#303030',
+        text: 'rgba(255, 255, 255, 0.7)',
+        scroll: '#ccc',
 
         navbar: {
             background: '#00000040',
@@ -25,26 +72,110 @@ export const Theme = {
         },
 
         dialog: {
-            background: '##000000',
-            blurredBackground: '#00000040',
-            title: '#000',
-            text: '#000'
+            background: '#424242',
+            blurredBackground: '#42424240',
+            title: '#fff',
+            text: 'rgba(255, 255, 255, 0.7)'
+        },
+
+        button: {
+            primary: {
+                background: '#7D3CE8',
+                boxShadow: 'none',
+                border: '1px solid #7D3CE8',
+                borderRadius: '3px',
+                text: '#FFFFFF',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#6C2BD7',
+                    text: '#FFFFFF',
+                },
+
+                disabled: {
+
+                }
+            },
+            secondary: {
+                background: '#FFFFFF',
+                boxShadow: 'none',
+                border: '1px solid #E0E0E0',
+                borderRadius: '3px',
+                text: '#989898',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#DDDDDD',
+                    text: '#989898',
+                },
+
+                disabled: {
+
+                }
+            }
         }
     },
     classic: {
-        background: '#d1c3ac40',
-        scroll: '#d1c',
+        primary: '#000',
+        secondary: '#2196f3',
+        background: '#ffe6bc',
+        scroll: '#333',
 
         navbar: {
-            background: '#d1c',
+            background: '#f5c26573',
             text: '#000'
         },
 
         dialog: {
-            background: '#d1c',
-            blurredBackground: '#ffffff40',
+            background: '#fff',
+            blurredBackground: '#ffe87840',
             title: '#000',
-            text: '#000'
+            text: '#333'
+        },
+
+        button: {
+            primary: {
+                background: '#7D3CE8',
+                boxShadow: 'none',
+                border: '1px solid #7D3CE8',
+                borderRadius: '3px',
+                text: '#FFFFFF',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#6C2BD7',
+                    text: '#FFFFFF',
+                },
+
+                disabled: {
+
+                }
+            },
+            secondary: {
+                background: '#FFFFFF',
+                boxShadow: 'none',
+                border: '1px solid #E0E0E0',
+                borderRadius: '3px',
+                text: '#989898',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'background 250ms',
+    
+                hover: {
+                    background: '#DDDDDD',
+                    text: '#989898',
+                },
+
+                disabled: {
+
+                }
+            }
         }
     }
 }

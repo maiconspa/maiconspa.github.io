@@ -22,6 +22,10 @@ export const Container = styled.div `
     ${({isOpen}) => isOpen && css`
         animation: ${show} .3s ease-out;
     `}
+
+    p {
+        color ${({theme}) => theme.text};
+    }
 `
 export const DialogBox = styled.div ` 
     background: ${({theme}) => theme.dialog.background};

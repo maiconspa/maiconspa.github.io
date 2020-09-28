@@ -1,25 +1,25 @@
 import React from 'react'
-import {useTranslation} from 'react-i18next'
+import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 import {Container, Item} from './styled'
 
 const List = props => {
-   const pathname = window.location.pathname
-   const {t} = useTranslation('menu')
-
+    const { handleShow } = props
+    const pathname = window.location.pathname
+   
     function getAvailableMenus() {
         return [
-            { title: t('technologies'), icon: '', route: '/technologies' },
-            { title: t('education'), icon: '', route: '/education' },
-            { title: t('projects'), icon: '', route: '/projects' },
-            { title: t('about'), icon: '', route: '/about' }
+            { title: 'Sobre', route: '/' },
+            { title: 'Projetos', route: '/' },
+            { title: 'Tecnologias', route: '/' },
+            { title: 'Contato', route: '/' }
         ];
     }
 
     function getMenuItem() {
-        return getAvailableMenus().map(m => <Link key={m.title} to={m.route} onClick={() => props.handleOpen(false)}>
-                <Item className={pathname === m.route ? 'active' : ''}>{m.icon} <span>{m.title}</span></Item>
+        return getAvailableMenus().map(m => <Link key={m.title} to={m.route} onClick={() => handleShow(false)}>
+                <Item className={pathname === m.route ? 'active' : ''}><span>{m.title}</span></Item>
             </Link>
         )
     }
@@ -29,4 +29,7 @@ const List = props => {
     </Container>
 }
 
-export default List
+
+export default connect(state => ({
+    lang: state
+}))(List)
