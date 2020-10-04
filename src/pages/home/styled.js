@@ -1,47 +1,91 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const toTop = keyframes`
+    0%   {opacity: 0; margin-top: 100vw;}
+    70%  {margin-top: -20px; }
+    100% {opacity: 1; margin-top: 0;}
+`
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'helloContent helloImage';
+    animation: ${toTop} 2s ease-out;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'helloContent'
+                             'helloImage';
+    }
 
     >div {
-        display: block;
+        grid-area: helloContent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
-        >h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: ${({theme}) => theme.primary};
-        }
-
-        >p {
-            width: 400px;
-            max-width: 100vw;
-            margin-bottom: 20px;
-            text-align: center;
-            color: ${({theme}) => theme.text};
+        @media (max-width: 768px) {
+            justify-content: center;
+            align-items: flex-end;
         }
 
         >div {
-            display: flex;
-            text-align: center;
-            justify-content: center;s
+            display: block;
+            height: fit-content;
+            padding-right: 20px;
+            
+            @media (max-width: 768px) {
+                padding: 0;
+            }
 
-            >a {
-                border: none;
-                outline: none;
-                background: none;
-                cursor: pointer;
-                display: block;
+            >h1 {
+                text-align: end;
+                margin-bottom: 20px;
+                padding: 0;
+                color: ${({ theme }) => theme.primary};
+                
+                @media (max-width: 768px) {
+                    text-align: center;
+                    width: 100%;
+                }
             }
-            svg {
-                width: 30px;
-                height: 30px;
-                fill: ${({theme}) => theme.text};
-                margin-left: 20px;
+
+            >p {
+                width: 400px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-align: end;
+                float: right;
+                color: ${({ theme }) => theme.text};
+                
+                @media (max-width: 768px) {
+                    text-align: center;
+                    width: 100%;
+                }
             }
+
+        }
+
+    }
+
+    >svg {
+        grid-area: helloImage;
+        width: 50%;
+        height: 100vh;
+        padding: 0 0 0 20px;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            width: 50%;
+            height: auto;
+            padding: 0 20px 0 0;
+            justify-self: center;
         }
     }
 `

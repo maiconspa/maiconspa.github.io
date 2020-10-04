@@ -7,7 +7,7 @@ export const Theme = {
         scroll: '#333',
 
         navbar: {
-            background: '#ffffff40',
+            background: '#c5c5c540',
             text: '#000'
         },
 

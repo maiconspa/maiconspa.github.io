@@ -1,8 +1,9 @@
 import styled, {css, keyframes} from 'styled-components'
 
 const slide = keyframes`
-    from   {top: -40px;}
-    to  {top: 10px;}
+    0%   {top: -40px;}
+    70%  {top: 25px; }
+    100% {top: 10px;}
 `
 
 const expand = keyframes`
@@ -27,7 +28,7 @@ export const Container = styled.nav`
     backdrop-filter: blur(4px);
     transition: all .5s;
     z-index: 997;
-    animation: ${slide} .5s ease-out;
+    animation: ${slide} 1s ease-out;
 
     ${({show}) => show && css`
         display: grid;
@@ -85,7 +86,7 @@ export const Container = styled.nav`
             fill: ${({theme}) => theme.navbar.text};
         }
 
-        @media (max-width: 1010px) {
+        @media (max-width: 768px) {
             display: block;
             z-index: 998;
         }
@@ -96,7 +97,7 @@ export const ButtonList = styled.div`
     grid-area: buttonList;
     display: flex;
 
-    @media (max-width: 1010px) {
+    @media (max-width: 768px) {
         display: none;
 
         ${({show}) => show && css`

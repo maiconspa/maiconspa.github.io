@@ -6,7 +6,7 @@ export const CustomScrollbar = styled(Scrollbars)`
 `
 
 export const Box = styled.div`
-    padding: ${({padding, horizontal}) => padding ?? (horizontal ? '0 10px 10px' : '0 10px')};
+    padding: ${({padding, horizontal}) => padding ?? (horizontal ? '0 10px 10px' : '0 10px 0 0')};
     color: ${({color}) => color ?? 'inherit'};
     background: ${({background}) => background ?? 'inherit'};
     overflow-y: ${({vertical}) => vertical ? 'scroll' : 'hidden'};

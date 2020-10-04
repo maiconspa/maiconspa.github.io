@@ -18,7 +18,7 @@ export const Container = styled.ul`
         }
     }
 
-    @media (max-width: 1010px) {
+    @media (max-width: 768px) {
         padding: 10px 0 20px;
         display: ${({show}) => show ? 'block' : 'none'};
         justify-self: right;
