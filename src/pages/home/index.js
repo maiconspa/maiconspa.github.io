@@ -2,12 +2,8 @@ import React from 'react'
 
 import { ReactComponent as HelloArt } from '../../assets/arts/undraw_hello.svg'
 
-import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg'
-import { ReactComponent as Github } from '../../assets/icons/github.svg'
-import { ReactComponent as Email } from '../../assets/icons/email.svg'
-
 import {Container} from './styled'
-const Home = () => <Container>
+const Home = () => <Container id='start'>
         <div>
             <div>
                 <h1>Olá, eu sou<br/>Maicon Souza</h1>
