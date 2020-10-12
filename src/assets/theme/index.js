@@ -20,17 +20,17 @@ export const Theme = {
 
         button: {
             primary: {
-                background: '#7D3CE8',
+                background: '#2196f3',
                 boxShadow: 'none',
-                border: '1px solid #7D3CE8',
-                borderRadius: '3px',
+                border: '1px solid #2196f3',
+                borderRadius: '5px',
                 text: '#FFFFFF',
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
     
                 hover: {
-                    background: '#6C2BD7',
+                    background: '#2096c0',
                     text: '#FFFFFF',
                 },
 
@@ -80,17 +80,18 @@ export const Theme = {
 
         button: {
             primary: {
-                background: '#7D3CE8',
+                background: '#2196f3',
                 boxShadow: 'none',
-                border: '1px solid #7D3CE8',
-                borderRadius: '3px',
+                border: '1px solid #2196f3',
+                borderRadius: '5px',
                 text: '#FFFFFF',
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
     
                 hover: {
-                    background: '#6C2BD7',
+                    background: '#0166f0',
+                    border: '1px solid #0166f0',
                     text: '#FFFFFF',
                 },
 
@@ -102,7 +103,7 @@ export const Theme = {
                 background: '#FFFFFF',
                 boxShadow: 'none',
                 border: '1px solid #E0E0E0',
-                borderRadius: '3px',
+                borderRadius: '5px',
                 text: '#989898',
                 fontSize: '14px',
                 outline: 'none',
@@ -110,6 +111,7 @@ export const Theme = {
     
                 hover: {
                     background: '#DDDDDD',
+                    border: '1px solid #DDDDDD',
                     text: '#989898',
                 },
 
@@ -139,17 +141,18 @@ export const Theme = {
 
         button: {
             primary: {
-                background: '#7D3CE8',
+                background: '#000',
                 boxShadow: 'none',
-                border: '1px solid #7D3CE8',
-                borderRadius: '3px',
+                border: '1px solid #000',
+                borderRadius: '5px',
                 text: '#FFFFFF',
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
     
                 hover: {
-                    background: '#6C2BD7',
+                    background: '#333',
+                    border: '1px solid #333',
                     text: '#FFFFFF',
                 },
 
@@ -161,7 +164,7 @@ export const Theme = {
                 background: '#FFFFFF',
                 boxShadow: 'none',
                 border: '1px solid #E0E0E0',
-                borderRadius: '3px',
+                borderRadius: '5px',
                 text: '#989898',
                 fontSize: '14px',
                 outline: 'none',

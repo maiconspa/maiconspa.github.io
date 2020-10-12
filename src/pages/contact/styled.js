@@ -79,6 +79,28 @@ export const Container = styled.div`
                 }
             }
 
+            &>a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: ${({theme}) => theme.button.primary.background};
+                padding: 8px 10px;
+                border-radius: ${({theme}) => theme.button.primary.borderRadius};
+                text-decoration: none;
+                color: ${({theme}) => theme.button.primary.text};
+                border: ${({theme}) => theme.button.primary.border};
+                transition: all .3s;
+
+                :hover {
+                    background: ${({theme}) => theme.button.primary.hover.background};
+                    border: ${({theme}) => theme.button.primary.hover.border};
+                }
+
+                >svg {
+                    fill: ${({ theme }) => theme.button.primary.text};
+                }
+            }
+
         }
 
     }
