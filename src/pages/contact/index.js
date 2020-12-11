@@ -18,7 +18,7 @@ const Home = () => <Container id='contact'>
                 <a target='_blank' href='https://github.com/maiconspa/'><Github /></a>
                 <a target='_blank' href='mailto:maiconsouzapa@gmail.com'><Email /></a>
             </div>
-            <a target='_blank' href='https://drive.google.com/file/d/1lT0npC_GsOLt7qdchsdqQvzpkIVG6ynF/view'>
+            <a target='_blank' href='https://drive.google.com/file/d/14uAThibQeIdnTouPzsZNlkQUiiNQrvMQ/view?usp=sharing'>
                 Meu Currículo
                 <ArrowForward />
             </a>

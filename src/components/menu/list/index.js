@@ -11,8 +11,8 @@ const List = props => {
     function getAvailableMenus() {
         return [
             { title: 'Sobre', route: '#start' },
-            { title: 'Projetos', route: '/' },
-            { title: 'Tecnologias', route: '/' },
+            // { title: 'Projetos', route: '/' },
+            // { title: 'Tecnologias', route: '/' },
             { title: 'Contato', route: '#contact' }
         ];
     }
