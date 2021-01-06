@@ -29,9 +29,9 @@ const Menu = () => {
                 <button onClick={() => (setOpenAppearanceDialog(true), setShow(false))}>
                     <Palette />
                 </button>
-                <button onClick={() => (setOpenSettingsDialog(true), setShow(false))}>
+                {/* <button onClick={() => (setOpenSettingsDialog(true), setShow(false))}>
                     <SettingsIcon />
-                </button>
+                </button> */}
             </ButtonList>
             
             <button onClick={() => setShow(prev => !prev)}>

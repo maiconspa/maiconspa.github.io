@@ -9,7 +9,7 @@ const SettingsDialog = (props) => {
     const {show, setShow} = props
 
     return <Dialog isOpen={show} handleClose={bool => setShow(bool)}>
-        <p>Ops, você chegou cedo demais, esta área ainda não está pronta 😯</p>
+        <p>Hmm, parece que você chegou cedo demais, esta área ainda não está pronta 🙈</p>
         
         {/* <button onClick={() => setLanguage('pt')}>pt</button>
         <button onClick={() => setLanguage('en')}>en</button>

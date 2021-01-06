@@ -15,8 +15,8 @@ const AppearanceDialog = props => {
     const {show, setShow, setTheme} = props
 
     return <Dialog isOpen={show} handleClose={bool => setShow(bool)}>
-        <p>Customize! É de gratis</p>
-        <Scrollbar container={{width: 'auto', height: '200px'}} autoHide={false}>
+        <p>Sim, temas!</p>
+        <Scrollbar container={{width: '200px', height: '200px'}} autoHide={false}>
             {Object.keys(Theme).map(key =>
                 <ThemeContainer key={key} onClick={() => setTheme(key)} currentTheme={Theme[key]}>
                     <nav />
