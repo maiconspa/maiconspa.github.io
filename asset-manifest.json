@@ -1,32 +1,28 @@
 {
   "files": {
-    "main.js": "/static/js/main.832cbf8e.chunk.js",
-    "main.js.map": "/static/js/main.832cbf8e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.71a821ab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.71a821ab.js.map",
-    "static/js/2.5c0a5c7e.chunk.js": "/static/js/2.5c0a5c7e.chunk.js",
-    "static/js/2.5c0a5c7e.chunk.js.map": "/static/js/2.5c0a5c7e.chunk.js.map",
+    "main.js": "/static/js/main.6a319d36.chunk.js",
+    "main.js.map": "/static/js/main.6a319d36.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.da80d8b1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.da80d8b1.js.map",
+    "static/js/2.70562009.chunk.js": "/static/js/2.70562009.chunk.js",
+    "static/js/2.70562009.chunk.js.map": "/static/js/2.70562009.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e4a2a0d36324e6db711bc4dd15c7bd48.js": "/precache-manifest.e4a2a0d36324e6db711bc4dd15c7bd48.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.5c0a5c7e.chunk.js.LICENSE.txt": "/static/js/2.5c0a5c7e.chunk.js.LICENSE.txt",
-    "static/media/Oxygen-Bold.ttf": "/static/media/Oxygen-Bold.3ada7a94.ttf",
-    "static/media/Oxygen-Light.ttf": "/static/media/Oxygen-Light.dfefd7db.ttf",
-    "static/media/Oxygen-Regular.ttf": "/static/media/Oxygen-Regular.61d9daf0.ttf",
-    "static/media/arrow_forward.d96af58a.svg": "/static/media/arrow_forward.d96af58a.svg",
-    "static/media/email.65e838f2.svg": "/static/media/email.65e838f2.svg",
-    "static/media/github.a112a001.svg": "/static/media/github.a112a001.svg",
-    "static/media/linkedin.4f19ea30.svg": "/static/media/linkedin.4f19ea30.svg",
-    "static/media/logo.99a52973.svg": "/static/media/logo.99a52973.svg",
-    "static/media/menu.974182fd.svg": "/static/media/menu.974182fd.svg",
-    "static/media/palette.837eba81.svg": "/static/media/palette.837eba81.svg",
-    "static/media/settings.07e54280.svg": "/static/media/settings.07e54280.svg",
-    "static/media/undraw_contact.64fb8a6c.svg": "/static/media/undraw_contact.64fb8a6c.svg",
-    "static/media/undraw_hello.ce4c0c0c.svg": "/static/media/undraw_hello.ce4c0c0c.svg"
+    "static/js/2.70562009.chunk.js.LICENSE.txt": "/static/js/2.70562009.chunk.js.LICENSE.txt",
+    "static/media/Oxygen-Bold.8c64e060.ttf": "/static/media/Oxygen-Bold.8c64e060.ttf",
+    "static/media/Oxygen-Light.47a32624.ttf": "/static/media/Oxygen-Light.47a32624.ttf",
+    "static/media/Oxygen-Regular.9d375dd5.ttf": "/static/media/Oxygen-Regular.9d375dd5.ttf",
+    "static/media/email.c039ffd4.svg": "/static/media/email.c039ffd4.svg",
+    "static/media/github.146e30eb.svg": "/static/media/github.146e30eb.svg",
+    "static/media/linkedin.1d97c71c.svg": "/static/media/linkedin.1d97c71c.svg",
+    "static/media/logo.271944db.svg": "/static/media/logo.271944db.svg",
+    "static/media/menu.572205dd.svg": "/static/media/menu.572205dd.svg",
+    "static/media/palette.f13ca556.svg": "/static/media/palette.f13ca556.svg",
+    "static/media/undraw_contact.df6cbe5b.svg": "/static/media/undraw_contact.df6cbe5b.svg",
+    "static/media/undraw_hello.0f30210a.svg": "/static/media/undraw_hello.0f30210a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.71a821ab.js",
-    "static/js/2.5c0a5c7e.chunk.js",
-    "static/js/main.832cbf8e.chunk.js"
+    "static/js/runtime-main.da80d8b1.js",
+    "static/js/2.70562009.chunk.js",
+    "static/js/main.6a319d36.chunk.js"
   ]
 }
