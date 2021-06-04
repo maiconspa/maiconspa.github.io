@@ -24,13 +24,13 @@ export const Container = styled.div `
     `}
 
     p {
-        color ${({theme}) => theme.text};
+        color: ${({theme}) => theme.text};
     }
 `
 export const DialogBox = styled.div ` 
     background: ${({theme}) => theme.dialog.background};
     padding: 32px;
-    border-radius: 3px;
+    border-radius: 15px;
     width: ${({width}) => width ?? 'auto'};
     height: ${({height}) => height ?? 'auto'};
   
@@ -39,6 +39,7 @@ export const DialogBox = styled.div `
 export const Close = styled.span`
     color: ${({theme}) => theme.dialog.title};
     float: right;
+    height: fit-content;
     font-size: 28px;
     font-weight: bold;
     :hover, :focus {

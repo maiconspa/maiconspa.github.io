@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 const toTop = keyframes`
     0%   {opacity: 0; margin-top: 100vw;}
@@ -39,6 +39,7 @@ export const Container = styled.div`
             display: block;
             height: fit-content;
             padding-right: 20px;
+            text-align: right;
             
             @media (max-width: 768px) {
                 padding: 0;
@@ -88,4 +89,14 @@ export const Container = styled.div`
             justify-self: center;
         }
     }
+`
+
+export const Alert = styled.span`
+    width: fit-content;
+    background-color: ${({theme}) => theme.alert};
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
 `

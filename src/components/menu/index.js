@@ -1,13 +1,13 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg'
 import { ReactComponent as MenuIcon } from '../../assets/icons/menu.svg'
-import { ReactComponent as SettingsIcon } from '../../assets/icons/settings.svg'
+// import { ReactComponent as SettingsIcon } from '../../assets/icons/settings.svg'
 import { ReactComponent as Palette } from '../../assets/icons/palette.svg'
 
 import List from './list'
-import {Container, ButtonList} from './styled'
+import { Container, ButtonList } from './styled'
 
 import AppearanceDialog from './dialog/appearance'
 import SettingsDialog from './dialog/settings'
@@ -23,24 +23,24 @@ const Menu = () => {
                 <Logo />
             </Link>
 
-            <List show={show} handleShow={bool => setShow(bool)}/>
-            
+            <List show={show} handleShow={bool => setShow(bool)} />
+
             <ButtonList show={show}>
-                <button onClick={() => (setOpenAppearanceDialog(true), setShow(false))}>
+                <button onClick={() => {setOpenAppearanceDialog(true); setShow(false)}}>
                     <Palette />
                 </button>
                 {/* <button onClick={() => (setOpenSettingsDialog(true), setShow(false))}>
                     <SettingsIcon />
                 </button> */}
             </ButtonList>
-            
+
             <button onClick={() => setShow(prev => !prev)}>
                 <MenuIcon />
             </button>
         </Container>
 
-        <AppearanceDialog show={openAppearanceDialog} setShow={setOpenAppearanceDialog}/>
-        <SettingsDialog show={openSettingsDialog} setShow={setOpenSettingsDialog}/>
+        <AppearanceDialog show={openAppearanceDialog} setShow={setOpenAppearanceDialog} />
+        <SettingsDialog show={openSettingsDialog} setShow={setOpenSettingsDialog} />
     </>
 }
 

@@ -1,13 +1,12 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {HashLink as Link} from 'react-router-dom'
+import { connect } from 'react-redux'
 
-import {Container, Item} from './styled'
+import { Container, Item } from './styled'
 
 const List = props => {
     const { handleShow } = props
     const pathname = window.location.pathname
-   
+
     function getAvailableMenus() {
         return [
             { title: 'Sobre', route: '#start' },
@@ -19,8 +18,8 @@ const List = props => {
 
     function getMenuItem() {
         return getAvailableMenus().map(m => <a key={m.title} href={m.route} onClick={() => handleShow(false)}>
-                <Item className={pathname === m.route ? 'active' : ''}><span>{m.title}</span></Item>
-            </a>
+            <Item className={pathname === m.route ? 'active' : ''}><span>{m.title}</span></Item>
+        </a>
         )
     }
 

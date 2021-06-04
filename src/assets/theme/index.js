@@ -5,6 +5,7 @@ export const Theme = {
         background: '#fff',
         text: '#333',
         scroll: '#333',
+        alert: '#ffa5a5',
 
         navbar: {
             background: '#c5c5c540',
@@ -28,7 +29,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#2096c0',
                     text: '#FFFFFF',
@@ -47,7 +48,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#DDDDDD',
                     text: '#989898',
@@ -65,6 +66,7 @@ export const Theme = {
         background: '#303030',
         text: 'rgba(255, 255, 255, 0.7)',
         scroll: '#ccc',
+        alert: '#966868',
 
         navbar: {
             background: '#00000040',
@@ -88,7 +90,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#0166f0',
                     border: '1px solid #0166f0',
@@ -108,7 +110,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#DDDDDD',
                     border: '1px solid #DDDDDD',
@@ -126,6 +128,7 @@ export const Theme = {
         secondary: '#2196f3',
         background: '#ffe6bc',
         scroll: '#333',
+        alert: '#ffa5a5',
 
         navbar: {
             background: '#f5c26573',
@@ -149,7 +152,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#333',
                     border: '1px solid #333',
@@ -169,7 +172,7 @@ export const Theme = {
                 fontSize: '14px',
                 outline: 'none',
                 transition: 'background 250ms',
-    
+
                 hover: {
                     background: '#DDDDDD',
                     text: '#989898',
