@@ -1,20 +1,17 @@
-import React, {Suspense} from 'react'
-import ReactDOM from 'react-dom'
-import App from './app/App.js'
-import * as serviceWorker from './serviceWorker'
-import Loader from './components/loader'
-import { Provider } from 'react-redux'
-import { Store } from './store'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import I18n from 'redux-i18n'
-import {translate} from "./assets/locales"
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-ReactDOM.render(<Suspense fallback={<Loader/>}>
-  	<Provider store={Store}>
-		<I18n translations={translate} initialLang='pt'>
-			<App />
-		</I18n>
-	</Provider>
-</Suspense>, document.getElementById('root'))
-
-serviceWorker.unregister()
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
